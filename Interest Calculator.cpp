@@ -7,7 +7,8 @@ int main(){
     //Read principal, annual rate (%) and years. Print the simple interest, and the compound interest compounded yearly (use pow from <cmath>).
     float principal, rate, interest;
 
-    interest = principal;
+
+    cin >> principal;
 
 
     
