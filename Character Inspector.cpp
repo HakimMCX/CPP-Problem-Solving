@@ -6,12 +6,12 @@ int main(){
     //Character Inspector
     //Read a single character. Print its ASCII code, whether it is an uppercase letter, lowercase letter, digit or symbol, and its opposite-case version if it is a letter.
 
-    char character;
-    cout << "Enter any character: ";
-    cin >> character;
-    int ascii = int(character);
+    char letter;
+    cout << "Enter any letter: ";
+    cin >> letter;
+    int ascii = int(letter);
 
-    cout << "ASCII code of your character: " << ascii; 
+    cout << "ASCII code of your letter: " << ascii; 
     
     return 0;
 }
