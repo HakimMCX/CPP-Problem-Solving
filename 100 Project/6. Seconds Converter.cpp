@@ -14,7 +14,7 @@ int main(){
     sec = (sec-(hour*60*60)-(min*60)); 
     
 
-    if(hour>=10){ //hour
+    if(hour>=10){ //hour-
         if(min>=10){ //min
             if(sec>=10){ //sec
                 cout << "Time: " << hour << ":" << min << ":" << sec;

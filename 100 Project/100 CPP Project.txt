@@ -1,0 +1,319 @@
+LEVEL 1: Basics (Input/Output, Variables, Operators)
+
+1. Personal Profile Printer /
+Ask the user for their name, age, height (in metres) and favourite number. Print one neatly formatted paragraph using all four values. Use the correct data type for each (string, int, double).
+
+2. Basic Calculator /
+Read two numbers and print their sum, difference, product, quotient and remainder. Show what happens when you divide two ints versus two doubles, and explain the difference in a comment.
+
+3. Temperature Converter /
+Read a temperature in Celsius and convert it to Fahrenheit and Kelvin. Print results to exactly 2 decimal places using <iomanip>.
+
+4. Geometry Calculator /
+Calculate the area and perimeter of a rectangle, the area and circumference of a circle (use const double PI), and the area of a triangle given three sides (Heron's formula).
+
+5. Swap Three Ways
+Swap two integers using (a) a temporary variable, (b) arithmetic only (no temp), and (c) std::swap. Print the values before and after each method.
+
+6. Seconds Converter
+Read a total number of seconds and print it as HH:MM:SS with leading zeros (e.g. 3725 → 01:02:05).
+
+7. Odd, Even and Sign
+Read an integer. Using the ternary operator, print whether it is odd or even, and whether it is positive, negative or zero.
+
+8. Maximum of Three
+Read three numbers and print the largest and the smallest, using only if statements (no arrays, no std::max).
+
+9. Interest Calculator
+Read principal, annual rate (%) and years. Print the simple interest, and the compound interest compounded yearly (use pow from <cmath>).
+
+10. Character Inspector
+Read a single character. Print its ASCII code, whether it is an uppercase letter, lowercase letter, digit or symbol, and its opposite-case version if it is a letter.
+
+LEVEL 2: Conditionals and Loops
+
+11. Grade Calculator
+Read a mark (0–100) and print the grade: A (80+), B (70–79), C (60–69), D (50–59), F (below 50). Reject invalid input (negative or above 100) and ask again.
+
+12. Leap Year and Days in Month
+Read a month and year. Print how many days that month has, correctly handling leap years (divisible by 4, except centuries not divisible by 400). Use a switch statement.
+
+13. Multiplication Table
+Read N and print the multiplication table from 1 to N as a neatly aligned grid using nested loops and setw.
+
+14. Digit Operations
+Read a positive integer and, using only loops and % and /, print: the sum of digits, the number reversed, the count of digits, and whether it is a palindrome number.
+
+15. Prime Finder
+Read two numbers A and B and print all prime numbers between them, 10 per line. Optimise the primality check to test divisors only up to √n.
+
+16. Extended FizzBuzz
+For numbers 1 to 100: print "Fizz" for multiples of 3, "Buzz" for 5, "Bazz" for 7, and combine words when a number is a multiple of several. Print the number itself if none apply.
+
+17. Pattern Printer
+Read N and print three patterns: a right-angled number triangle, an inverted star pyramid, and a hollow diamond of height N.
+
+18. ATM Menu
+Build a menu-driven ATM using do-while and switch: Check Balance, Deposit, Withdraw, Exit. Block withdrawals that exceed the balance and reject negative amounts. Start with a balance of RM 1000.
+
+19. Guess the Number
+The computer picks a random number from 1–100 (<random>). The user guesses repeatedly and gets "too high" or "too low" hints. At the end, show the number of attempts. Limit to 7 attempts.
+
+20. Factorial and Fibonacci Table
+Read N (≤ 20) and print a table with columns n, n!, Fib(n) for each n from 1 to N using unsigned long long. Then try N = 25 and note in a comment where overflow happens.
+
+LEVEL 3: Functions and Arrays
+
+21. GCD and LCM
+Write int gcd(int, int) using Euclid's algorithm and int lcm(int, int) that uses it. Test with at least 5 pairs, including a pair where one number is 0.
+
+22. Array Statistics
+Read N numbers into an array. Write separate functions to find the minimum, maximum, sum, average, median and mode. Print all results.
+
+23. Reverse and Rotate
+Write functions to (a) reverse an array in place, (b) rotate it left by K positions, (c) rotate it right by K positions. Do not use extra arrays.
+
+24. Searching
+Implement linear search and binary search (iterative) on a sorted array. Both must return the index or -1, and count the number of comparisons made. Compare the counts for an array of 1000 elements.
+
+25. Bubble Sort
+Implement bubble sort with an early-exit optimisation. Count and print the number of swaps and passes. Use a boolean parameter to choose ascending or descending order.
+
+26. Remove Duplicates
+Given an unsorted array, write a function that removes duplicates while preserving the first occurrence order, and returns the new size. Do not use any STL containers.
+
+27. Matrix Operations
+Read two matrices (up to 5×5) and perform addition and multiplication. Check that dimensions are compatible before multiplying and print a clear error if not.
+
+28. Matrix Properties
+For a square matrix, write functions to compute the transpose, the sum of both diagonals, and check whether it is symmetric. Also print the matrix in spiral order.
+
+29. Overloading and Defaults
+Write overloaded functions area() for a circle, rectangle and triangle. Add a function with default arguments power(base, exp = 2). Also write an inline function and explain in a comment when inline helps.
+
+30. Value, Reference, Pointer
+Write three versions of increment and swap functions: pass-by-value, pass-by-reference and pass-by-pointer. Print the variables before and after each call and write a comment explaining each result.
+
+LEVEL 4: Strings, Pointers and Recursion
+
+31. Smart Palindrome
+Read a full sentence with getline. Check whether it is a palindrome, ignoring spaces, punctuation and letter case (e.g. "A man, a plan, a canal: Panama").
+
+32. Character Counter
+Read a paragraph and count vowels, consonants, digits, spaces and punctuation separately. Also print the most frequent letter.
+
+33. Word Analyzer
+Read a sentence and print the number of words, the longest word, the shortest word, and the sentence with the order of words reversed. Do not use stringstream; split manually.
+
+34. Caesar Cipher
+Implement encrypt(text, shift) and decrypt(text, shift). Preserve case, leave non-letters unchanged, and support negative and large shift values.
+
+35. Anagram Checker
+Write a function that checks whether two strings are anagrams, ignoring case and spaces. Implement it twice: once by sorting, once using a frequency array of size 26. Compare the approaches.
+
+36. Pointer Playground
+Declare an int array of 10 elements. Using only pointer arithmetic (no []), fill it, print each element with its memory address, reverse it using two pointers, and find the maximum.
+
+37. Dynamic Array
+Ask for N, allocate an array with new[], fill it, compute the average, then write a resize() function that grows the array to 2N while keeping the old data. Free all memory with delete[] and set pointers to nullptr.
+
+38. Recursion Collection
+Write recursive functions for: factorial, Fibonacci, power (x^n), sum of digits, binary conversion, and checking whether a string is a palindrome. Add a constexpr factorial and verify it with static_assert.
+
+39. Tower of Hanoi
+Read the number of disks N and print every move (Move disk 2 from A to C). Also print the total number of moves and verify it equals 2^N − 1.
+
+40. String Compression
+Write compress("aaabbbbc") → "a3b4c1" and decompress() for the reverse. Handle edge cases (empty string, single character, digits in the input) and print whether compression actually shortened the string.
+
+LEVEL 5: Structs, Classes and OOP Basics
+
+41. Student Records
+Define struct Student { string name; int id; double marks[3]; } and an enum class Grade. Read N students, calculate the average and grade, and print a table sorted by average (highest first).
+
+42. BankAccount Class
+Create a BankAccount class with private balance, account number and owner. Add constructors, deposit, withdraw, getters, and a display method. Reject invalid operations by returning false and printing a reason.
+
+43. Object Counter
+Create a Rectangle class with a constructor, a destructor that prints a message, and a static int count tracking how many objects exist. Create objects in nested scopes and show the count changing.
+
+44. Fraction Class
+Create a Fraction class in your own namespace Math. Support add, subtract, multiply and divide, automatic simplification (using gcd), a negative denominator fix, and a toDecimal() method. Throw or report an error when the denominator is zero.
+
+45. Library System
+Create a Book class (title, author, ISBN, isBorrowed) and a Library class holding a vector<Book>. Implement add, remove, search by title/author, borrow, return, and list all available books.
+
+46. Time Class
+Create a Time class (hours, minutes, seconds) that normalises values (e.g. 75 minutes → 1h 15m). Add methods to add two times, subtract, and compare. Make non-modifying methods const.
+
+47. Complex Number Class
+Create a Complex class and overload +, -, *, ==, << and >>. Make << and >> friend functions. Test with at least 6 expressions.
+
+48. Employee Payroll (Inheritance)
+Create a base class Employee and derived classes Manager, Developer and Intern, each with different salary calculations (bonus, overtime, stipend). Use protected members and print a payroll summary.
+
+49. Shape Hierarchy (Polymorphism)
+Create an abstract Shape with pure virtual area(), perimeter() and name(). Derive Circle, Rectangle and Triangle. Store them in a vector<Shape*>, print the details, and find the shape with the largest area. Add a virtual destructor and explain why it is needed.
+
+50. Rule of Three
+Create your own MyString class that stores a char*. Implement the constructor, copy constructor (deep copy), copy assignment operator (with self-assignment check) and destructor. Write a test that proves there is no double-free.
+
+LEVEL 6: STL and File Handling
+
+51. Vector Gradebook
+Store student names and scores in a vector<pair<string,double>>. Support add, remove, update, sort by score descending (custom comparator), and print the average using std::accumulate.
+
+52. Word Frequency
+Read a text file, strip punctuation, convert to lowercase, count the words with unordered_map<string,int>, and print the top 10 most frequent words in order.
+
+53. Set Operations
+Read two lists of numbers into two set<int>s. Print the union, intersection, difference and symmetric difference using both manual loops and <algorithm> functions (set_union, etc.).
+
+54. Bracket Checker
+Using stack<char>, check whether an expression containing (), {} and [] is balanced. If not, print the position of the first error. Test with at least 8 strings.
+
+55. Bank Queue Simulation
+Simulate a bank with queue<Customer>. Customers arrive at random intervals with random service times. Simulate 8 hours and print the average waiting time and the longest queue length.
+
+56. Task Scheduler
+Use priority_queue to manage tasks with priority and deadline. Support adding tasks, executing the highest priority task, and listing the remaining tasks. Use a custom comparator so ties are broken by earlier deadline.
+
+57. File Statistics
+Read integers from input.txt, compute the count, sum, min, max and average, and write a formatted report to output.txt. Handle a missing file and malformed data without crashing.
+
+58. CSV Reader
+Read students.csv (name, math, science, english) with ifstream and stringstream. Compute each student's average, the class average per subject, and write the ranked list to a new CSV.
+
+59. Persistent Contact Book (Multi-file)
+Build a contact book (add, search, update, delete, list) that saves to a file and loads on startup. Split the code into Contact.h, Contact.cpp, main.cpp with include guards, and add a DEBUG macro that prints extra logs.
+
+60. STL Algorithm Workout
+Given a vector<Employee> of 20 entries, use only <algorithm> and <numeric> functions to: sort by salary, find the first employee above a threshold (find_if), count by department (count_if), give everyone a raise (transform), remove those under a certain age (erase-remove), and find a salary using lower_bound.
+
+LEVEL 7: Templates, Exceptions, Memory and Data Structures
+
+61. Generic Utilities
+Write function templates maxOf, swapValues, bubbleSort and printArray that work for int, double, string and a custom Student type (with operator<). Add a template specialisation for const char*.
+
+62. Template Stack
+Implement Stack<T> with a dynamic array, push, pop, top, isEmpty, size, automatic growth, and exceptions on underflow. Use it to evaluate postfix expressions like 5 1 2 + 4 * + 3 -.
+
+63. Custom Exceptions
+Create an exception hierarchy BankException → InsufficientFundsException, AccountNotFoundException, InvalidAmountException. Build a small bank that throws and catches them in different layers, uses rethrow, and has at least one noexcept function.
+
+64. Smart Pointer Family Tree
+Model a family tree where each Person has a parent and children. Use shared_ptr for children and weak_ptr for the parent to avoid a memory cycle. Prove with use_count() and destructor messages that nothing leaks. Also demonstrate unique_ptr and make_unique.
+
+65. Singly Linked List
+Implement from scratch: insert at head/tail/position, delete by value/position, search, reverse (iterative and recursive), find the middle node, and detect a cycle with Floyd's algorithm. Include a proper destructor.
+
+66. Playlist (Circular Doubly Linked List)
+Build a music playlist with next, previous, add song, remove song, shuffle and repeat. The list must be circular and doubly linked. Prevent memory leaks.
+
+67. Binary Search Tree
+Implement insert, search, delete (all three cases), inorder/preorder/postorder traversal, height, count of leaves, min/max, and level-order traversal using a queue. Check if the tree is a valid BST.
+
+68. Matrix Class with Operator Overloading
+Create a template Matrix<T> class with +, -, *, scalar multiplication, operator()(i,j) for access, operator<<, transpose, and a determinant function. Throw an exception on dimension mismatch. Implement the copy constructor and assignment operator correctly.
+
+69. Lambda Pipeline
+Given a vector<Product> (name, price, category, stock), use lambdas and std::function to: filter by category, sort by multiple keys (category then price), apply a discount using capture-by-reference, calculate the total value, and build a reusable "pipeline" that chains several operations.
+
+70. Move Semantics Lab
+Create a Buffer class managing a heap array. Implement the copy constructor, move constructor, copy assignment and move assignment, each printing a log message. Insert objects into a vector, return from functions, and use std::move to count how many copies and moves actually happen.
+
+LEVEL 8: Algorithms and Problem Solving
+
+71. Sorting Showdown
+Implement insertion sort, selection sort, merge sort, quick sort (random pivot) and heap sort. Generate arrays of 1,000, 10,000 and 100,000 random ints, time each algorithm with <chrono>, and print a comparison table.
+
+72. Two Sum and Three Sum
+Solve Two Sum with a hash map (O(n)) and with the two-pointer technique on a sorted array. Then solve Three Sum (return all unique triplets that sum to zero) without duplicates in the output.
+
+73. Sliding Window Problems
+Implement: (a) the longest substring without repeating characters, (b) the maximum sum subarray of size K, (c) the smallest subarray with sum ≥ S, (d) the maximum of each window of size K (using deque). Test each with edge cases.
+
+74. N-Queens
+Use backtracking to place N queens on an N×N board. Print the number of solutions for N = 4 to 10, and print the first solution as a board using Q and .. Optimise with boolean arrays for columns and diagonals.
+
+75. Sudoku Solver
+Read a 9×9 Sudoku grid (0 = empty). Solve it with backtracking, validate the starting grid first, and print the solved grid. Report if the puzzle has no solution.
+
+76. 0/1 Knapsack
+Given N items with weights and values and a capacity W, find the maximum value using DP. Also reconstruct and print which items were chosen. Then solve the same problem with space-optimised 1D DP.
+
+77. LCS and Edit Distance
+Implement Longest Common Subsequence and print the actual subsequence, not only its length. Then implement Edit Distance (Levenshtein) and print the sequence of operations (insert/delete/replace) needed.
+
+78. Graph Traversals
+Build a graph using an adjacency list. Implement BFS, DFS (recursive and iterative), count connected components, and find the shortest path in an unweighted graph. Add a grid-maze mode where # is a wall and BFS finds the shortest route from S to E.
+
+79. Dijkstra's City Map
+Read cities and weighted roads. Use priority_queue to find the shortest distance from a source city to all others, and reconstruct and print the actual path to a chosen destination. Handle unreachable cities.
+
+80. Course Scheduler
+Given courses with prerequisites, produce a valid study order using topological sort (both Kahn's algorithm and DFS). Detect and report a cycle in the prerequisites. Also compute the minimum number of semesters if unlimited courses can be taken per semester.
+
+LEVEL 9: Advanced Data Structures, Concurrency and Language Features
+
+81. Bit Manipulation Toolkit
+Write functions to: count set bits, check power of two, get/set/clear/toggle the k-th bit, find the single non-duplicated number in an array using XOR, generate all subsets of a set using bitmasks, and reverse the bits of a 32-bit integer. Also demonstrate std::bitset.
+
+82. Build Your Own Vector
+Implement MyVector<T> with push_back, pop_back, operator[], at() with bounds-checking, reserve, resize, size, capacity (doubling growth), iterators (begin/end), and the full Rule of Five. Make it work with range-based for.
+
+83. Hash Table from Scratch
+Implement a template HashMap<K,V> with separate chaining, a custom hash function, insert, get, remove, contains, and automatic rehashing when the load factor exceeds 0.75. Compare its speed with unordered_map.
+
+84. Network Cabling (DSU + Kruskal)
+Implement Union-Find with path compression and union by rank. Use it with Kruskal's algorithm to find the minimum cost to connect N offices with given cable costs. Print the chosen cables and the total cost, and report if the network cannot be fully connected.
+
+85. Autocomplete with Trie
+Implement a Trie supporting insert, search, startsWith, delete, and suggest(prefix) that returns up to 5 words ranked by frequency. Load a word list from a file and make a simple interactive autocomplete loop.
+
+86. LRU Cache
+Implement an LRU cache with O(1) get and put using std::list and unordered_map. Support a configurable capacity, print the cache state after each operation, and count hits and misses.
+
+87. Producer–Consumer
+Using std::thread, std::mutex and std::condition_variable, implement a bounded buffer with 2 producers and 3 consumers. Producers generate numbers and consumers process them. Ensure no data race, no deadlock, and a clean shutdown with a "poison pill" or stop flag.
+
+88. Parallel Computation
+Compute the sum of a 50-million-element vector using (a) a single thread, (b) std::thread split across N chunks, and (c) std::async with std::future. Compare timings. Then demonstrate a race condition with a shared counter and fix it with both std::mutex and std::atomic.
+
+89. Expression Evaluator
+Parse and evaluate expressions like 3 + 4 * (2 - 1) ^ 2 / -5 using the shunting-yard algorithm. Support + - * / ^, parentheses, unary minus, decimals, and variables (x = 5). Give clear errors for division by zero and mismatched parentheses.
+
+90. Custom Iterator and Concepts
+Create a Range class that generates a numeric sequence (start, end, step) lazily, with its own iterator class that works in range-based for and with std::accumulate. Then write a C++20 function template constrained with a concept that accepts only types with begin() and end().
+
+LEVEL 10: Capstone Projects
+
+91. Inventory Management System
+Build a console app with classes Item, PerishableItem (expiry date) and ElectronicItem (warranty), managed by an Inventory class. Requirements: add/update/delete items, search by name/category/price range, sort by multiple fields, low-stock alerts, save and load from file, custom exceptions, a menu loop, and a report that totals stock value per category using STL algorithms.
+
+92. Banking Platform
+Create Account (abstract), SavingsAccount, CurrentAccount and FixedDeposit, with different rules for interest, overdraft and withdrawal limits. Include transaction history, transfers between accounts (atomic: either both sides succeed or neither), monthly interest processing, binary-file persistence, and a set of simple self-written unit tests that run before the menu.
+
+93. Text Adventure Engine
+Build a game engine where rooms are nodes in a graph with directions (N/S/E/W). Support items, an inventory with weight limit, locked doors that need keys, simple NPC dialogue, a command parser (go north, take sword, use key on door), save/load game state to a file, and a win/lose condition. Rooms and items must be loaded from a data file.
+
+94. In-Memory File System
+Simulate a file system with a tree of directories and files. Implement commands mkdir, cd, ls, pwd, touch, write, cat, rm, mv, cp, tree and find, plus support for absolute and relative paths (../, ./). Use smart pointers, and keep a command history with !n to rerun.
+
+95. JSON Parser
+Write a recursive descent parser for a JSON subset (objects, arrays, strings, numbers, booleans, null). Represent values with std::variant, return std::optional for lookups, pretty-print with indentation, and report syntax errors with line and column. Add a query function like get("users[0].name").
+
+96. Unbeatable Tic-Tac-Toe and Connect Four
+Implement Tic-Tac-Toe with a minimax AI, then upgrade to alpha-beta pruning. Extend the engine to Connect Four with a depth-limited search and a simple heuristic evaluation function. Count the number of nodes evaluated with and without pruning and print the comparison.
+
+97. Custom Memory Pool Allocator
+Implement a fixed-size block memory pool using placement new and a free list. Make a PoolAllocator<T> compatible with std::vector or std::list. Benchmark 1 million allocations against the default allocator, and add leak detection that reports blocks not returned at program exit.
+
+98. Elevator Simulation
+Create an event-driven simulation of a building with 3 elevators and 20 floors. Passengers arrive randomly with source and destination floors. Use a priority_queue of timestamped events and a scheduling strategy (e.g. nearest car). Output average waiting time, average travel time, and maximum waiting time. Compare two different strategies.
+
+99. Thread Pool
+Implement a reusable ThreadPool class with a fixed number of worker threads and a task queue. submit(f, args...) must return a std::future of the result (use variadic templates and std::packaged_task). Support graceful shutdown that finishes queued tasks. Demonstrate by computing primes and sorting chunks in parallel.
+
+100. Mini Database Engine
+Build a tiny in-memory database with a SQL-like command interface. Support CREATE TABLE, INSERT, SELECT ... WHERE ... ORDER BY, UPDATE, DELETE, and COUNT. Include column types (int, double, string), an index on a chosen column using std::map, a tokenizer and parser, persistence to a file, helpful error messages, and at least 15 automated test cases.
