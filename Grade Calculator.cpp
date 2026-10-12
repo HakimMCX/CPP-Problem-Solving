@@ -7,14 +7,15 @@ int main(){
     //A (80+), B (70–79), C (60–69), D (50–59), F (below 50). 
     //Reject invalid input (negative or above 100) and ask again.
 
-    int mark = 0;
+    int mark;
     char grade;
     bool flag = true;
 
-    cout << "Enter your mark: ";
-    cin >> mark;
-
+    
     while(flag){
+        cout << "\nEnter your mark [0-100, -1 if done]: ";
+        cin >> mark;
+
         if(mark>=80){
             grade = 'A';
             cout << "Your grade is " << grade;
@@ -30,6 +31,11 @@ int main(){
         }else if(mark>=0){
             grade = 'F';
             cout << "Your grade is " << grade;
+        }else if(mark==-1){
+            flag = false;
+            cout << "Thank you for supporting us!";
+        }else{
+            cout << "Please enter the right value!";
         }
     }
     
