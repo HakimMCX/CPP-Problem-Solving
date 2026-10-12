@@ -7,17 +7,17 @@ int main(){
     //Read a single character. Print its ASCII code, whether it is an uppercase letter, lowercase letter, digit or symbol, and its opposite-case version if it is a letter.
 
     char word;
-
     cout << "Enter any word: ";
     cin >> word;
 
-    int(word); //converting char to int, it will give us ascii code
+    string temp = string(1, word); //1 mean repaeat char once //converting char to string to use string library
+    cout << "ASCII code of your word: "; 
 
-    for(int i=1; i==word.length(), i++){
-
+    for(char c : temp){
+        int ascii = int(c);
+        cout << ascii << ", ";
     }
 
-    cout << "ASCII code of your word: " << endl; 
     
     return 0;
 }
