@@ -14,7 +14,7 @@ int main(){
     }
 
     while(num!=0){
-        num/10;
+        
     }
 
     cout << "The sum of digits: " << digit;
