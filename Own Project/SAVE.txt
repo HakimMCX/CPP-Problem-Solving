@@ -1,0 +1,109 @@
+Auto assign data types:
+auto myNum = 5; // int
+auto myFloatNum = 5.99f; // float
+auto myDoubleNum = 9.98; // double
+auto myLetter = 'D'; // char
+auto myBoolean = true; // bool
+auto myString = string("Hello"); // std::string
+
+Concatenation:
+string x = "Hakim";
+string y = "MCX";
+string z = x.append(y); //Append
+string z = "Hakim" + "MCX";
+cout << z;
+
+Lenght:
+string mcx = "HakimMCX";
+cout << mcx.length();
+cout << mcx.size();
+
+Indexs:
+string mcx = "HakimMCX";
+cout << mcx[0]; //M
+cout << mcx[mcx.length() - 1]; //X
+mcx[0] = "J";
+cout << mcx; //JakimMCX
+
+At:
+string mcx = "HakimMCX";
+cout << mcx.at(0);  //M
+cout << mcx.at(mcx.length() - 1) //X
+mcx.at(0) = "J"
+cout << mcx; //JakimMCX
+
+Input 2+ Word:
+string fullName;
+cout << "Type your full name: ";
+getline (cin, fullName);
+cout << "Your name is: " << fullName; 
+
+If code not using "using namespace std";
+std::string greeting = "Hello"; //all declaration must have std::
+std::cout << greeting;
+
+Store Boolean:
+int x = 10;
+int y = 9;
+bool isGreater = x > y;
+cout << isGreater; // returns 1 (true)
+
+Boolean + If-else:
+int myAge = 25;
+int votingAge = 18;
+if (myAge >= votingAge) {
+  cout << "Old enough to vote!";
+} else {
+  cout << "Not old enough to vote.";
+}
+
+Ternary Operator (Ringkasan if-else):
+variable = (condition) ? expressionTrue : expressionFalse;
+
+int time = 20;
+string result = (time < 18) ? "Good day." : "Good evening.";
+cout << result;
+
+or
+
+int time = 20;
+cout << ((time < 18) ? "Good day." : "Good evening."); //print terus
+
+
+Nested Ternary:
+int time = 22;
+string message = (time < 12) ? "Good morning."
+  : (time < 18) ? "Good afternoon."
+  : "Good evening.";
+cout << message;
+
+Nested Loops:
+for(int i=1;i<=2;++i){
+	cout << i << endl; // Executes 2 times
+	for(int j=1;j<=3;++j){
+		cout << j << endl;  // Executes 6 times (2 * 3)
+	}
+}
+
+Foreach Loop:
+int myNumbers[5] = {10, 20, 30, 40, 50};
+for (int num : myNumbers) {
+  cout << num << "\n";
+}
+
+string word = "Hello";
+for (char c : word) {
+  cout << c << "\n";
+}
+
+Vector is Resizeable array:
+// A vector with 3 elements
+vector<string> cars = {"Volvo", "BMW", "Ford"};
+
+// Adding another element to the vector
+cars.push_back("Tesla");
+
+
+sizeof():
+int myNumbers[5] = {10, 20, 30, 40, 50};
+cout << sizeof(myNumbers);
