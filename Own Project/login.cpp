@@ -1,40 +1,45 @@
 #include <iostream>
-#include <iomanip>
 #include <ctime>
 using namespace std;
 
 int main(){
-    struct user{
-        string username;
-        string password;
-        string backupPassword;
-        bool admin;
-        string dateRegister;
-        string timeRegister;
-        float timeTakenToRegister;
-    };
+    //DATA BASE
+    string username[3] = {"HakimMCX", "KokoGT", "Cue"};
+    string password[3] = {"hakimgan123", "kotak123", "123gg"};
+    bool admin[3] = {true, false, false};
 
-    //DATA BASE:
-    user HakimMCX;
-    user Koko;
-    user Amba;
+    cout << "LOGIN\n";
 
-    
-    cout << setw(5) << "LOGIN" << setw(5);
+    string usernameInput;
+    string passwordInput;
+    int index = 0;
 
     clock_t before = clock();
 
-    user firstUser;
     cout << "Username: ";
-    cin >> firstUser.username;
+    cin >> usernameInput;
     cout << "Password: ";
-    cin >> firstUser.password;
-    cout << firstUser.username;
+    cin >> passwordInput;
 
-
-    clock_t duration = clock() - before);
+    for(string user : username){
+        if (usernameInput==user){
+            if(passwordInput==password[index]){
+                cout << "Welcome back " << username[index] << "!";
+                break;
+            }else{
+                cout << "The password you entered is incorrect!";
+                break;
+            }
+        }else{
+            cout << "The username you entered is not register yet!";
+            break;
+        }
+        index+=1;
+    }
     
-    cout << "Time taken to login:"  << duration << "Seconds";
+    clock_t duration = clock() - before;
+    
+    cout << "\nTime taken: "  << duration << " ms";
 
     return 0;
 }
