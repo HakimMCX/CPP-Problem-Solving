@@ -7,6 +7,7 @@ int main(){
     //Read two numbers A and B and print all prime numbers between them, 10 per line. Optimise the primality check to test divisors only up to √n.
 
     int A, B, x=0;
+    bool maybe;
     vector<int> prime;
 
     cout << "Enter your first number: ";
@@ -25,12 +26,17 @@ int main(){
     }
 
     if(A==B){
-        for(int i=3; i!=A; i++){
-            if((A%i)==0){
-                break;
+        for(int i=2; i!=A; i++){
+            if((A%i)!=0){
+                maybe = true;
+            }else{
+                maybe = false;
             }
-            prime.push_back(A);
         }
+    }
+
+    if(maybe==true){
+        prime.push_back(A);
     }
 
     cout << "Prime number: ";
