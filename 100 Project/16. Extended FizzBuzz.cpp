@@ -12,7 +12,7 @@ int main(){
         }else if(i%3==0 && i%7==0){
             cout << "FizzBazz";
         }else if(i%5==0 && i%7==0){
-            cout << "BuzzBazz"
+            cout << "BuzzBazz";
         }
         else if(i%3==0){
             cout << "Fizz";
@@ -23,6 +23,7 @@ int main(){
         }else{
             cout << i;
         }
+        cout << endl;
     }
     return 0;
 }
