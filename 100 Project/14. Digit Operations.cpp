@@ -2,19 +2,11 @@
 #include <cmath>
 using namespace std;
 
-int powerTen(int x){
-    int y=1;
-    while(x!=0){
-        y*=10;
-        x-=1;
-    }
-    return y;
-}
-
 int main(){
     //Digit Operations
     //Read a positive integer and, using only loops and % and /, 
-    //print: the sum of digits, the number reversed, the count of digits, and whether it is a palindrome number.
+    //print: the sum of digits, the number reversed, the count of digits, 
+    //and whether it is a palindrome number.
 
     int num = 0, digit = 0, sum = 0;
 
@@ -39,37 +31,34 @@ int main(){
         sum=(num/10)+(num%10);
     }else if(digit>2){
         sum+=num/static_cast<int>(pow(10, decimal-1));
-        cout << "LOG: " << sum << endl;
+        //cout << "LOG: " << sum << endl;
         while(digit!=2){
             //temp+=1;
 
             sum+=static_cast<int>(num/(pow(10, digit-2))) % static_cast<int>(pow(10, 1)); 
             //% only for integer value, so we convert pow() into integer
-            cout << "LOG: " << sum << endl;
+            //cout << "LOG: " << sum << endl;
 
             digit-=1;
         }
         sum+=num%static_cast<int>(pow(10, 1));
-        cout << "LOG: " << sum << endl;
-        }
-    //  else if(digit>2){
-    //     sum+=num/powerTen(decimal-1);
-    //     cout << "LOG: " << sum << endl;
-    //     while(digit!=2){
-    //         temp+=1;
-
-    //         sum+=(num/(powerTen(digit-2))) % powerTen(temp); 
-    //         //% only for integer value, so cannot use pow() bcz it will return decimal number, instead we using our own function
-    //         cout << "LOG: " << sum << endl;
-
-    //         digit-=1;
-    //     }
-    //     sum+=num/(pow(10, decimal-1));
-    //     cout << "LOG: " << sum << endl;
-    // }
-
-
-    cout << "The number of digits: " << decimal << endl;
+        //cout << "LOG: " << sum << endl;
+    }
+    
+    digit = decimal; //return the real value of digit
+    
     cout << "The sum of digits: " << sum << endl;
+    cout << "The number reversed: ";
+    if(digit==1){
+        cout << num;
+    }else if(digit==2){
+        cout << (num%10) << (num/10) ;
+    }else if(digit>2){
+        while(digit!=0){
+            cout << (num%static_cast<int>(pow(10, decimal-digit+1))) / static_cast<int>(pow(10, decimal-digit));
+            digit-=1;
+        }
+    }
+    cout << "\nThe count of digits: " << decimal << endl;
     return 0;
 }
