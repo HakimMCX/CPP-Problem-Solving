@@ -46,19 +46,36 @@ int main(){
     }
     
     digit = decimal; //return the real value of digit
+    int reverse = 0;
     
-    cout << "The sum of digits: " << sum << endl;
-    cout << "The number reversed: ";
     if(digit==1){
-        cout << num;
+        reverse=num;
     }else if(digit==2){
-        cout << (num%10) << (num/10) ;
+        reverse=(num%10);
+        reverse=(reverse*10)+(num/10);
     }else if(digit>2){
         while(digit!=0){
-            cout << (num%static_cast<int>(pow(10, decimal-digit+1))) / static_cast<int>(pow(10, decimal-digit));
+            //cout << (num%static_cast<int>(pow(10, decimal-digit+1))) / static_cast<int>(pow(10, decimal-digit));
+            if(digit==decimal){
+                reverse=(num%static_cast<int>(pow(10, decimal-digit+1))) / static_cast<int>(pow(10, decimal-digit));
+                digit-=1;
+                continue;
+            }
+
+            reverse=(reverse*10)+(num%static_cast<int>(pow(10, decimal-digit+1))) / static_cast<int>(pow(10, decimal-digit));
+            
             digit-=1;
         }
     }
+
+    cout << "The sum of digits: " << sum << endl;
+    cout << "The number reversed: " << reverse;
     cout << "\nThe count of digits: " << decimal << endl;
+    cout << "Palindrome number: ";
+    if(num==reverse){
+        cout << "True";
+    }else{
+        cout << "False";
+    }
     return 0;
 }
