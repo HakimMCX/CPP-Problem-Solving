@@ -22,15 +22,19 @@ int main(){
         digit++;
     }
 
-    int decimal = digit;
+    int decimal = digit , temp = 0;
 
     if(digit==1){
         sum=num;
     }else if(digit==2){
         sum=(num/10)+(num%10);
     }else if(digit>2){
-        sum+=num/(pow(10, digit-1));
-        while(digit!=0){
+        sum+=num/(pow(10, decimal-1));
+        while(digit!=2){
+            temp++;
+
+            sum+=(num/pow(10, digit-2));
+            sum%=pow(10, temp);
 
             digit-=1;
         }
