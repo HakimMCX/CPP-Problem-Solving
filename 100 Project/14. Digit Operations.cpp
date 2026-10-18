@@ -28,20 +28,22 @@ int main(){
         sum=num;
     }else if(digit==2){
         sum=(num/10)+(num%10);
-    }else if(digit>2){
-        sum+=num/(pow(10, decimal-1));
+    }else if(digit>3){
+        sum+=num/static_cast<int>(pow(10, decimal-1));
+        cout << sum << endl;
         while(digit!=2){
-            temp++;
+            temp+=1;
 
-            sum+=(num/pow(10, digit-2));
-            sum%=pow(10, temp);
+            sum+=static_cast<int>(num/pow(10, digit-2)) % static_cast<int>(pow(10, temp)); 
+            //% only for integer value, so change it to int first, use static_cast<int>
+            cout << sum << endl;
 
             digit-=1;
         }
         sum+=num/(pow(10, decimal-1));
+        cout << sum << endl;
     }
     
-    //sum=(num/100)+((num/10)%10)+(num%10);
 
 
     cout << "The number of digits: " << decimal << endl;
