@@ -34,16 +34,18 @@ int main(){
 
     //Hollow diamond
     for(int m=0; m!=N; m++){
+        if(m==N-1){
+            break;
+        }
         cout << setw(5-m);
         for(int n=1; n<=(2*m+1); n++){
             cout << "*";
         }  
         cout << endl;
     }
-    for(int m=N; m!=0; m--){
-        cout << setw(m);
-        for(int n=(2*m+1); n!=0; n--){
-            if(n=N)
+    for(int m=N-1; m!=-1; m--){
+        cout << setw(N-m);
+        for(int n=1; n<=(2*m+1); n++){
             cout << "*";
         }  
         cout << endl;
