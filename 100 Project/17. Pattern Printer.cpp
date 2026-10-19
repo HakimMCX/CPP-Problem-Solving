@@ -39,14 +39,27 @@ int main(){
         }
         cout << setw(5-m);
         for(int n=1; n<=(2*m+1); n++){
-            cout << "*";
+            if(n==1){
+                cout << "*";
+            }else if(n!=1 && n<(2*m+1)){
+                cout << " ";
+            }else if(n==(2*m+1)){
+                cout << "*";
+            }
         }  
         cout << endl;
     }
+
     for(int m=N-1; m!=-1; m--){
         cout << setw(N-m);
         for(int n=1; n<=(2*m+1); n++){
-            cout << "*";
+            if(n==1){
+                cout << "*";
+            }else if(n!=1 && n<(2*m+1)){
+                cout << " ";
+            }else if(n==(2*m+1)){
+                cout << "*";
+            }
         }  
         cout << endl;
     }
