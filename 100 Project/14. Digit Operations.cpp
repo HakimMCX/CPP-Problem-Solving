@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cmath>
+#include <string>
+#include <algorithm>
 using namespace std;
 
 int main(){
@@ -46,33 +48,34 @@ int main(){
     }
     
     digit = decimal; //return the real value of digit
-    int reverse = 0;
+    string reversed = to_string(num); //
+    reverse(reversed.begin(), reversed.end());
     
-    if(digit==1){
-        reverse=num;
-    }else if(digit==2){
-        reverse=(num%10);
-        reverse=(reverse*10)+(num/10);
-    }else if(digit>2){
-        while(digit!=0){
-            //cout << (num%static_cast<int>(pow(10, decimal-digit+1))) / static_cast<int>(pow(10, decimal-digit));
-            if(digit==decimal){
-                reverse=(num%static_cast<int>(pow(10, decimal-digit+1))) / static_cast<int>(pow(10, decimal-digit));
-                digit-=1;
-                continue;
-            }
+    // if(digit==1){
+    //     reverse=num;
+    // }else if(digit==2){
+    //     reverse=(num%10);
+    //     reverse=(reverse*10)+(num/10);
+    // }else if(digit>2){
+    //     while(digit!=0){
+    //         //cout << (num%static_cast<int>(pow(10, decimal-digit+1))) / static_cast<int>(pow(10, decimal-digit));
+    //         if(digit==decimal){
+    //             reverse=(num%static_cast<int>(pow(10, decimal-digit+1))) / static_cast<int>(pow(10, decimal-digit));
+    //             digit-=1;
+    //             continue;
+    //         }
 
-            reverse=(reverse*10)+(num%static_cast<int>(pow(10, decimal-digit+1))) / static_cast<int>(pow(10, decimal-digit));
+    //         reverse=(reverse*10)+(num%static_cast<int>(pow(10, decimal-digit+1))) / static_cast<int>(pow(10, decimal-digit));
             
-            digit-=1;
-        }
-    }
+    //         digit-=1;
+    //     }
+    // }
 
     cout << "The sum of digits: " << sum << endl;
-    cout << "The number reversed: " << reverse;
+    cout << "The number reversed: " << reversed;
     cout << "\nThe count of digits: " << decimal << endl;
     cout << "Palindrome number: ";
-    if(num==reverse){
+    if(to_string(num)==reversed){
         cout << "True";
     }else{
         cout << "False";
