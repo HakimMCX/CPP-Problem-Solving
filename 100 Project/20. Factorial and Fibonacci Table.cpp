@@ -14,15 +14,13 @@ int main(){
         cout << "Enter your number [1-20]: ";
         cin >> N;
 
-        cout << setw(2) << "n" << setw(2) << "n!" << setw(2) << "Fib(n)" << endl;
+        cout << setw(10) << "n" << setw(10) << "n!" << setw(10) << "Fib(n)" << endl;
 
         for(int x=N; x!=0; x-=1){
             fact*=x;
             //if(x=)
             //fib=0;
-            for(int i=1; i<=N; i++){
-                cout << setw(2) << N << setw(2) << fact << setw(2) << fib << endl;
-            }
+            cout << setw(10) << N-x+1 << setw(10) << fact << setw(10) << fib << endl;
         }
 
     }
