@@ -16,13 +16,11 @@ int main(){
 
         cout << setw(10) << "n" << setw(10) << "n!" << setw(10) << "Fib(n)" << endl;
 
-        for(int x=N; x!=0; x-=1){
-            for(int y=1; y!=N-x+2; y++){
+        for(int x=1; x!=N+1; x++){
+            for(int y=1; y!=x+1; y++){
                 fact*=x;
             }
-            //if(x=)
-            //fib=0;
-            cout << setw(10) << N-x+1 << setw(10) << fact << setw(10) << fib << endl;
+            cout << setw(10) << x << setw(10) << fact << setw(10) << fib << endl;
         }
 
     }
