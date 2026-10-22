@@ -2,7 +2,12 @@
 using namespace std;
 
 int gcd(int x, int y){
+    int q, r;
+    if(x>y){
+        x/y;
+    }else{
 
+    }
 }
 
 int lcm(int x, int y){
