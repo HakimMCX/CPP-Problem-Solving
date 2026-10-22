@@ -4,7 +4,12 @@ using namespace std;
 int gcd(int x, int y){
     int q, r;
     if(x>y){
-        x/y;
+        while(r!=0){
+            q=x/y;
+            r=x%y;
+            x=y;
+            y=r;
+        }
     }else{
 
     }
