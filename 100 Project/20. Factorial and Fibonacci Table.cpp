@@ -18,7 +18,7 @@ int main(){
 
         for(int x=1; x!=N+1; x++){
             for(int y=1; y!=x+1; y++){
-                fact*=x;
+                fact*=y;
             }
             cout << setw(10) << x << setw(10) << fact << setw(10) << fib << endl;
         }
