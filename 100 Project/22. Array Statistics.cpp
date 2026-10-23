@@ -2,7 +2,11 @@
 using namespace std;
 
 int minimum(int x, int y){
-    
+    if(x>y){
+        return x;
+    }else{
+        return y;
+    }
 }
 
 int main(){
@@ -17,6 +21,10 @@ int main(){
     for(int i=0; i!=5; i++){
         cout << "Enter your " << i+1 << " number: ";
         cin >> N[i];
+    }
+
+    for(int i=0; i!=5 ;i++){
+        min=minimum(N[i], N[i+1]);
     }
 
     return 0;
