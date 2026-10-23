@@ -11,7 +11,7 @@ int gcd(int x, int y){
             y=r;
             return x, y;
         }
-    }else{
+    }else if(y>x){
         while(r!=0){
             q=y/x;
             r=y%x;
@@ -35,7 +35,7 @@ int main(){
     int pairNumber2[5] = {18, 18, 5, 36, 8};
 
     for(int i=0; i!=5; i++){
-        cout << "No1: " << pairNumber1[i] << " and No2: " << pairNumber2[i] << " = " << gcd(pairNumber1[i], pairNumber2[i]) << endl;
+        cout << "No1: " << pairNumber1[i] << " and No2: " << pairNumber2[i] << " GCD: " << gcd(pairNumber1[i], pairNumber2[i]) << endl;
     }
 
     return 0;
