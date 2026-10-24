@@ -2,7 +2,7 @@
 using namespace std;
 
 int minimum(int x, int y){
-    if(x>y){
+    if(x<y){
         return x;
     }else{
         return y;
