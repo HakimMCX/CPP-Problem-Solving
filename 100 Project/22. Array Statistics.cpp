@@ -9,6 +9,14 @@ int minimum(int x, int y){
     }
 }
 
+int max(int x, int y){
+    if(x>y){
+        return x;
+    }else{
+        return y;
+    }
+}
+
 int main(){
     //22. Array Statistics
     //Read N numbers into an array. 
