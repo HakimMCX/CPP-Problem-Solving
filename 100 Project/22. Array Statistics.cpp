@@ -17,6 +17,22 @@ int max(int x, int y){
     }
 }
 
+int sum(int x, int y){
+    return x+y;
+}
+
+float average(int x, int y){
+    return (x+y)/2;
+}
+
+float median(int x, int y){
+
+}
+
+float mode(int x, int y){
+
+}
+
 int main(){
     //22. Array Statistics
     //Read N numbers into an array. 
