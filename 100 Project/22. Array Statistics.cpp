@@ -30,7 +30,7 @@ float median(int x, int y){
 }
 
 float mode(int x, int y){
-
+    
 }
 
 int main(){
