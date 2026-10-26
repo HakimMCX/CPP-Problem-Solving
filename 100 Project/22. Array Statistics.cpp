@@ -26,7 +26,7 @@ float average(int x, int y){
 }
 
 float median(int x, int y){
-
+    return (x+y)/2;
 }
 
 float mode(int x, int y){
