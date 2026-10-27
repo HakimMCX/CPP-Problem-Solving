@@ -5,6 +5,10 @@ int reverse(int x, int y){
 
 }
 
+int rotate(int x, int y){
+    
+}
+
 int main(){
     //23. Reverse and Rotate
     //Write functions to (a) reverse an array in place, (b) rotate it left by K positions, 
