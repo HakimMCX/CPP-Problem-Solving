@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int reverse(int x; int y){
-    
+int reverse(int x, int y){
+
 }
 
 int main(){
