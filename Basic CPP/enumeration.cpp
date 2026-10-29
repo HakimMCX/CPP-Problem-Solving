@@ -9,8 +9,14 @@ int main(){
         FARIS
     };
 
-    sectNumber section = FARIS;
-    cout << section;
+    sectNumber section1 = HAKIM;
+    sectNumber section2 = AMIEL;
+    sectNumber section3 = LUQMAN;
+    sectNumber section4 = FARIS;
+    cout << section1;
+    cout << section2;
+    cout << section3;
+    cout << section4;
 
     return 0;
 }
