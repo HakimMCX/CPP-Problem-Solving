@@ -9,7 +9,7 @@ int main(){
 
     cout << &food << endl;
 
-    cout << ptr << endl;
+    cout << ptr << endl; 
     
     return 0;
 }
