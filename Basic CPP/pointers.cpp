@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
     string food = "Fried Chicken";
-    string* ptr = &food;
+    string* ptr = & food;
 
     cout << food << endl;
 
