@@ -17,6 +17,6 @@ int main(){
 
     *ptr = "Hamburger"; // Change the value of the pointer
 
-    cout << food; //food also change
+    cout << food; //food also changed
     return 0;
 }
