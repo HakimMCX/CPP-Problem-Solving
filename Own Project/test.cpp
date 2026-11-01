@@ -7,7 +7,7 @@ int i;
 int lowestAge = ages[0];
 
 // Loop through the elements of the ages array to find the lowest age
-for (int age : ages) {
+for(int age : ages) {
   if (lowestAge > age) {
     lowestAge = age;
   }

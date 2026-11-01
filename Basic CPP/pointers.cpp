@@ -3,7 +3,9 @@ using namespace std;
 
 int main(){
     string food = "Fried Chicken";
-    string* ptr = & food;
+    string* ptr = &food; 
+    // string * ptr = & food; //3 ways to declare a pointer variable
+    // string *ptr = & food;
 
     cout << food << endl;
 
