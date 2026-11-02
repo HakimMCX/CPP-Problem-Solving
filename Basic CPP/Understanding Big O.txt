@@ -1,0 +1,9 @@
+Complexity	Name	        Example
+O(1)	    Constant	    Accessing an array element
+O(log n)	Logarithmic 	Binary Search
+O(n)	    Linear	        Linear Search
+O(n log n)	Linearithmic	Merge Sort
+O(n²)	    Quadratic	    Bubble Sort
+O(n³)	    Cubic	        Some triple nested loops
+O(2ⁿ)	    Exponential     Some recursive problems
+O(n!)   	Factorial	    Generating all permutations
