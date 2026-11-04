@@ -14,8 +14,7 @@ Selection Sort	            O(n²)	O(n²)	        O(n²)
 Insertion Sort	            O(n)	O(n²)	        O(n²)
 Merge Sort                  O(n log n)	O(n log n)	O(n log n)
 Quick Sort	                O(n log n)	O(n log n)	O(n²)
-Heap Sort                  	O(n log n)	O(n log n)	O(n log n)
-Shell Sort	                Depends on gap sequence	
+Heap Sort                  	O(n log n)	O(n log n)	O(n log n)Shell Sort	                 Depends on gap sequence	
 Counting Sort	            O(n + k)	O(n + k)	O(n + k)
 Radix Sort	                O(d(n + k))	O(d(n + k))	O(d(n + k))
 Bucket Sort	                O(n + k)	O(n + k)*	O(n²)        //
