@@ -17,5 +17,9 @@ int main(){
         }
     }
 
+    for(int i=0; i < sizeof(unsortedList); i++){
+        cout << unsortedList[i] << " ";
+    }
+
     return 0;
 }
