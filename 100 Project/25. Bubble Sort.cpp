@@ -9,15 +9,17 @@ int main(){
 
     int unsortedList[10] = {24, 14, 82, 67, 52, 91, 21, 54, 98, 72};
 
-    for(int i=0; i < sizeof(unsortedList)-1; i++){
-        for(int j=0; j < sizeof(unsortedList)-1; j++){
+    int size = sizeof(unsortedList) / sizeof(unsortedList[0]);
+        
+    for(int i=0; i < size-1; i++){
+        for(int j=0; j < size-1; j++){
             if(unsortedList[j]>unsortedList[j+1]){
                 swap(unsortedList[j], unsortedList[j+1]);
             }
         }
     }
 
-    for(int i=0; i < sizeof(unsortedList); i++){
+    for(int i=0; i < size; i++){
         cout << unsortedList[i] << " ";
     }
 
