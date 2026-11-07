@@ -7,6 +7,18 @@ int main(){
     //Do not use any STL containers.
 
     int unsortedArray[] = {21, 76, 23, 18, 49, 95, 76, 42};
+    int size = sizeof(unsortedArray)/sizeof(unsortedArray[0])
+
+    for(int i=0; i<size; i++){
+        for(int j=0; j<size; j++){
+            if(i==j){
+                continue;
+            }
+            else if(unsortedArray[i]==unsortedArray[j]){
+                
+            }
+        }
+    }
     
     return 0;
 }
