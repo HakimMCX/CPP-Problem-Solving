@@ -8,6 +8,7 @@ int main(){
 
     int unsortedArray[] = {21, 76, 23, 21, 18, 49, 95, 76, 42, 76};
     int size = sizeof(unsortedArray)/sizeof(unsortedArray[0]);
+    int newSize=0;
 
     for(int i=0; i<size; i++){
         for(int j=0; j<size; j++){
@@ -18,17 +19,16 @@ int main(){
             }
         }
     }
-
-    int size = sizeof(unsortedArray)/sizeof(unsortedArray[0]);
     
     for(int x=0; x<size; x++){
         if(unsortedArray[x]==-1){
             continue;
         }
+        newSize++;
         cout << unsortedArray[x] << " ";
     }
 
-    cout << "\nNew Size: " << size;
+    cout << "\nNew Size: " << newSize;
 
     return 0;
 }
