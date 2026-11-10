@@ -8,6 +8,10 @@ int main(){
     //Compare the counts for an array of 1000 elements.
 
     int sortedList[10] = {8, 12, 15, 21, 29, 34, 41, 64, 76, 91};
+    int size = sizeof(sortedList)/sizeof(sortedList[0]);
+
+    //Linear Search
+    for(int i=1; i<size; i++)
 
     return 0;
 }
