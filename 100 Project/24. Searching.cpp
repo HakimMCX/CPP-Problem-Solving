@@ -9,9 +9,16 @@ int main(){
 
     int sortedList[10] = {8, 12, 15, 21, 29, 34, 41, 64, 76, 91};
     int size = sizeof(sortedList)/sizeof(sortedList[0]);
+    int target, count=0;
+
+    cout << "Enter number that you want to find: ";
+    cin >> target;
 
     //Linear Search
-    for(int i=1; i<size; i++)
+    for(int i=1; i<size; i++){
+
+        
+    }
 
     return 0;
 }
