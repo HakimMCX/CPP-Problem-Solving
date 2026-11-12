@@ -16,8 +16,9 @@ int main(){
 
     //Linear Search
     for(int i=1; i<size; i++){
-
-        
+        if(sortedList[i]==target){
+            
+        }
     }
 
     return 0;
