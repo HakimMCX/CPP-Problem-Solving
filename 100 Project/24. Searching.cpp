@@ -9,7 +9,7 @@ int main(){
 
     int sortedList[10] = {8, 12, 15, 21, 29, 34, 41, 64, 76, 91};
     int size = sizeof(sortedList)/sizeof(sortedList[0]);
-    int target, count=0;
+    int target, count=0, index;
 
     cout << "Enter number that you want to find: ";
     cin >> target;
@@ -18,9 +18,16 @@ int main(){
     for(int i=1; i<size; i++){
         count++;
         if(sortedList[i]==target){
-             
+            index = i;
+            break;
+        }else{
+            index = -1;
         }
     }
+
+    cout << target << " at index: " << index << endl;
+    cout << 
+
 
     return 0;
 }
