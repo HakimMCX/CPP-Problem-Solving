@@ -14,12 +14,14 @@ float printRegion(string country = "USA"){
     cout << country << endl;
 } //optional parameter (default value if not have parameter)
 
+void changeValue(int &num) {
+    num = 50;
+} //reference in function (exp: use for change value)
+
 int main(){
     int amount;
     float unitPrice, sumPrice;
     bool flag=true;
-
-    
     
     while(flag){
         banner();
