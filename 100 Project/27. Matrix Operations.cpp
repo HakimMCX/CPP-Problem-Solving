@@ -11,6 +11,7 @@ int main(){
     cin >> row;
     cout << "Enter the number of column: ";
     cin >> col;
-    
+
+        
     return 0;
 }
