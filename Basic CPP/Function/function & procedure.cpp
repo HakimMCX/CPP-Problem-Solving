@@ -8,7 +8,11 @@ void banner(){
 
 float totalPrice(int x, float y){
     return x*y;
-}
+} //multiple parameter must have the same value and data type
+
+float printRegion(string country = "USA"){
+    cout << country << endl;
+} //optional parameter (default value if not have parameter)
 
 int main(){
     int amount;
