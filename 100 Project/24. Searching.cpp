@@ -26,7 +26,7 @@ int main(){
     }
 
     cout << target << " at index: " << index << endl;
-    cout << "the number of comparisons mades: " << count;
+    cout << "The number of comparisons mades: " << count;
     
     return 0;
 }
