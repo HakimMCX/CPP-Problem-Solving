@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+int transpose(){
+
+}
+
 int main(){
     //28. Matrix Properties
     //For a square matrix, write functions to compute the transpose,
