@@ -11,7 +11,9 @@ int main(){
     //the sum of both diagonals, and check whether it is symmetric. 
     //Also print the matrix in spiral order.
 
-
+    for(int i=1; i<10; i++){
+        
+    }
 
     return 0;
 }
