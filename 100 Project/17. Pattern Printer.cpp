@@ -4,7 +4,10 @@ using namespace std;
 
 int main(){
     // 17. Pattern Printer
-    // Read N and print three patterns: a [right-angled number triangle], an [inverted star pyramid], and a [hollow diamond] of height N.
+    // Read N and print three patterns: 
+    //a [right-angled number triangle], 
+    //an [inverted star pyramid], 
+    //and a [hollow diamond] of height N.
 
     int N;
 
