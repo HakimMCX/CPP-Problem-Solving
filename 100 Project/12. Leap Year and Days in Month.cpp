@@ -106,8 +106,6 @@ int main(){
 
     bool leapYear = (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0));
 
-    cout << leapYear;
-
     switch(leapYear){
         case true:
             cout << year << " is a leap year" << endl;
