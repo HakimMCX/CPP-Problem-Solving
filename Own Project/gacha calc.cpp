@@ -4,7 +4,10 @@
 using namespace std;
 
 int main(){
-    ifstream fin("gacha calc.txt");
+    //Gacha generator use for game development
+    for(int x; x!=100; x++;){
+
+    }
 
     return 0;
 }
